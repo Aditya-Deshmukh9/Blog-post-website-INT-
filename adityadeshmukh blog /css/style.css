@@ -1,0 +1,329 @@
+/* Global Styles */
+* {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Variables for Consistent Theme */
+:root {
+    --primary-color: #35424a;
+    --secondary-color: #6a7f8e;
+    --accent-color: #f9c74f;
+    --bg-light: #ffffff;
+    --bg-dark: #f0f0f0;
+}
+
+/* Utility Classes */
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Home Section Styles */
+#home {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+#home p {
+    font-size: 1.3rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.explore-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Blog Section */
+#blog {
+  text-align: center;
+}
+
+#blog h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-grid article {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-grid article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Header */
+.blog-grid article header {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-grid article h3 {
+  font-size: 1.75rem;
+  color: white;
+}
+
+.blog-grid article time {
+  font-size: 0.85rem;
+  color: #f4f4f4;
+}
+
+/* Article Body */
+.blog-grid article p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.blog-grid article strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Image and Figure Styles */
+.blog-grid article figure {
+  margin: 20px 0;
+}
+
+.blog-grid article figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: black;
+}
+
+.blog-grid article figure figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Key Takeaways */
+.blog-grid article section h4 {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.blog-grid article ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-grid article ul li {
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* YouTube Video Styling */
+.blog-grid article iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #blog h2 {
+    font-size: 2rem;
+  }
+
+  .blog-grid article {
+    padding: 15px;
+  }
+}
+/* Contact Form */
+#contact {
+  max-width: 1400px;
+    padding: 40px 20px;
+}
+
+#contact h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: var(--bg-dark);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+}

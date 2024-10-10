@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A personal blog showcasing my thoughts and interests." />
+        <title>Aditya's Blog</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Aditya's Corner</h1>
+            <p>Exploring Web Development, Life, and Beyond</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <div class="container">
+                    <h1>Welcome to My Blog</h1>
+                    <p>
+                        Explore insightful articles, engaging tutorials, and stories that inspire. Whether you're here
+                        for technology, personal development, or just a good read, we have something for everyone.
+                    </p>
+                    <button class="explore-button">Explore More</button>
+                </div>
+            </section>
+
+            <section id="blog" class="container">
+                <h2>Blog Posts</h2>
+
+                <div class="blog-grid">
+                    <!-- HTML Blog Post -->
+                    <article>
+                        <header>
+                            <h3>The Power of HTML</h3>
+                            <p><time datetime="2024-10-04">October 4, 2024</time></p>
+                        </header>
+                        <p>
+                            <strong>Summary:</strong> HTML is the backbone of any website, structuring the content and
+                            ensuring accessibility.
+                        </p>
+                        <p>
+                            HTML stands for HyperText Markup Language and is essential for structuring content on the
+                            web. Whether you’re creating simple text or embedding multimedia, HTML is the language that
+                            brings content to life. Here's an overview...
+                        </p>
+                        <figure>
+                            <img src="https://i.ytimg.com/vi/90kC1YLNF3U/maxresdefault.jpg" alt="HTML Structure" />
+                            <figcaption>Basic HTML structure of a webpage.</figcaption>
+                        </figure>
+                        <section>
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>HTML is the foundation of web pages.</li>
+                                <li>It provides structure and meaning to the content.</li>
+                                <li>HTML elements are crucial for SEO and accessibility.</li>
+                            </ul>
+                        </section>
+                        <h4>Learn More with This Video</h4>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/UB1O30fR-EE"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+
+                    <!-- CSS Blog Post -->
+                    <article>
+                        <header>
+                            <h3>Styling with CSS</h3>
+                            <p><time datetime="2024-09-30">September 30, 2024</time></p>
+                        </header>
+                        <p>
+                            <strong>Summary:</strong> CSS brings life to your web pages with colors, layouts, and design
+                            elements.
+                        </p>
+                        <p>
+                            Cascading Style Sheets (CSS) allows you to add visual styles to your HTML. From fonts to
+                            colors, from layout grids to animations, CSS is the magic that transforms plain content into
+                            visually appealing websites. Here's how you can start...
+                        </p>
+                        <figure>
+                            <img src="https://way2tutorial.com/images/internal_sheet.png" alt="CSS styling example" />
+                            <figcaption>An example of how CSS enhances the appearance of a web page.</figcaption>
+                        </figure>
+                        <section>
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>CSS controls the layout and style of web pages.</li>
+                                <li>It enables responsiveness for different devices.</li>
+                                <li>CSS animations can enhance user interactions.</li>
+                            </ul>
+                        </section>
+                        <h4>Learn More with This Video</h4>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/yfoY53QXEnI"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+
+                    <!-- JavaScript Blog Post -->
+                    <article>
+                        <header>
+                            <h3>JavaScript: Bringing Interactivity</h3>
+                            <p><time datetime="2024-09-25">September 25, 2024</time></p>
+                        </header>
+                        <p>
+                            <strong>Summary:</strong> JavaScript makes your website dynamic, allowing for interactive
+                            features and functionality.
+                        </p>
+                        <p>
+                            JavaScript is a programming language that adds interactivity to web pages. Whether it’s form
+                            validation, dynamic content updates, or complex logic, JavaScript is the go-to tool for web
+                            developers to make websites more engaging and functional. Here's an introduction...
+                        </p>
+                        <figure>
+                            <img
+                                src="https://miro.medium.com/v2/resize:fit:1400/1*0UNBOlKRFRMnTwrOmfNtNw.png"
+                                alt="JavaScript code example"
+                            />
+                            <figcaption>A simple JavaScript function that manipulates DOM elements.</figcaption>
+                        </figure>
+                        <section>
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>JavaScript enhances user experience with interactivity.</li>
+                                <li>It allows you to manipulate HTML and CSS dynamically.</li>
+                                <li>JavaScript is essential for modern web applications.</li>
+                            </ul>
+                        </section>
+                        <h4>Learn More with This Video</h4>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/PkZNo7MFNFg"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Send Message" />
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2024 Aditya's Blog</p>
+            <p><a href="#">Back to top</a></p>
+        </footer>
+    </body>
+</html>
